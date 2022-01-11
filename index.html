@@ -18,8 +18,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="top-wrapper">
-      <div class="navigation"></div>
+    <div class="top-wrapper" id="topWrapper">
+      <div class="navigation" id="navigation"></div>
 
       <div class="heading">
         <h1>Let's talk science</h1>
@@ -168,7 +168,7 @@
     navfunction,
     searchanimation,
   } from "../components/script.js";
-  document.querySelector(".navigation").innerHTML = navbar();
+  document.getElementById("Navigation").innerHTML = navbar();
   document.querySelector("footer").innerHTML = footer();
   let bestseller = document.querySelector(".bestseller-items");
   let container = document.querySelector(".product-container");
